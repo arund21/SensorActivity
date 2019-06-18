@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SensorsDataActivity">
+    <TextView
+        android:id="@+id/tvAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Sensors Data"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+      />
+    <EditText
+        android:id="@+id/etFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="First Number"
+        android:text="0"
+        android:layout_below="@+id/tvAll"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/etSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="First Number"
+        android:layout_below="@+id/etFirstNumber"
+        android:text="0"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/etSecondNumber"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyro Sensor data"
+        android:id="@+id/tvGyroData"
+        android:layout_below="@+id/btnCalculate"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/tvGyroSensorData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move your phone left or right"
+        android:layout_below="@+id/tvGyroData"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proxi Sensor data"
+        android:id="@+id/tvProxiSensor"
+        android:layout_below="@+id/tvGyroSensorData"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/etProxiSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move your phone left or right"
+        android:layout_below="@+id/tvProxiSensor"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Sensor data"
+        android:id="@+id/tvLightSensor"
+        android:layout_below="@+id/tvProxiSensor"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/etLightSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move your phone left or right"
+        android:layout_below="@+id/tvLightSensor"
+        android:layout_marginStart="20dp"
+        />
+</RelativeLayout>
